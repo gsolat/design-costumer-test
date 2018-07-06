@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Forjamente</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Diseño y Comunicación visual.">
+    <meta name="author" content="Guillermo Solano">
+
+<!-- CSS -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="img/gs.ico">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic' rel='stylesheet' type='text/css'>
+  </head>
+
+<body>
+  <div>
+
+<!-- PORTAFOLIO -->
+
+<section id="form">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="quiz col-xl-4 offset-xl-4">
+                <div class="questions col-xl-8 offset-xl-1">
+                <h5>1. Entiende usted el diseño como:</h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="escoge" value="Irrelevante">
+                    <label class="form-check-label">
+                      Algo desconocido y poco importante.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="escoge" value="Bonito">
+                    <label class="form-check-label">
+                      Relevante solo en cuanto estilo y estética.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="escoge" value="Acertado">
+                    <label class="form-check-label">
+                      Una forma elegante de resolver problemas.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="escoge" value="None of These">
+                    <label class="form-check-label">
+                      Ninguna de las anteriores.
+                    </label>
+                </div>
+                <button class="btn btn-primary" onclick="submitAnswer()">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JAVASCRIPT -->
+
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        var submitAnswer = function() {
+
+            var radios = document.getElementsByName('escoge');
+            var val= "";
+
+            for (var i = 0, length = radios.length; i < length; i++) {
+                if (radios[i].checked) {
+                    val = radios[i].value;
+                    break;
+                }
+            }
+            if (val == "" ) {
+                confirm('Selecciona una respuesta');
+            } else if ( val == "Acertado" ) {
+                confirm('Estamos de acuerdo !');
+            } else if ( val == "Irrelevante" ) {
+                confirm('irrelevante !')
+            } else if ( val == "Bonito" ) {
+                alert('Punto Parcial !');
+            } else {
+                alert('Adios !');
+              }
+            };
+    </script>
+
+  </body>
+</html>
