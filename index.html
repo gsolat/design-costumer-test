@@ -12,8 +12,6 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="shortcut icon" href="img/gs.ico">
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic' rel='stylesheet' type='text/css'>
   </head>
 
 <body>
@@ -25,8 +23,8 @@
     <div class="container-fluid">
         <div class="row">
             <div class="quiz col-xl-4 offset-xl-4">
-                <div class="questions col-xl-8 offset-xl-1">
-                <h5>1. Entiende usted el diseño como:</h5>
+                <div class="questions col-xl-10 offset-xl-1">
+                <h4>Para usted el diseño es:</h4>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="escoge" value="Irrelevante">
                     <label class="form-check-label">
@@ -51,12 +49,14 @@
                       Ninguna de las anteriores.
                     </label>
                 </div>
-                <button class="btn btn-primary" onclick="submitAnswer()">Enviar</button>
+                <button class="btn" onclick="submitAnswer()">Enviar</button>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+
 
 <!-- JAVASCRIPT -->
 
@@ -74,18 +74,17 @@
                 }
             }
             if (val == "" ) {
-                confirm('Selecciona una respuesta');
+                alert('Selecciona una respuesta');
             } else if ( val == "Acertado" ) {
-                confirm('Estamos de acuerdo !');
+                window.location.assign("bio.html");
             } else if ( val == "Irrelevante" ) {
-                confirm('irrelevante !')
+                window.location.assign("sleeping-user.html");
             } else if ( val == "Bonito" ) {
-                alert('Punto Parcial !');
+                window.location.assign("nice-design.html");
             } else {
                 alert('Adios !');
               }
             };
     </script>
-
   </body>
 </html>

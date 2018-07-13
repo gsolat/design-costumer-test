@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,700,900');
 
 body {
     margin-top: 0;
     position: relative;
     width: 100%;
     font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
 h1,
@@ -15,7 +16,7 @@ h4,
 h5,
 h6 {
     font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
 a {
@@ -43,16 +44,18 @@ hr {
     margin: 0 0 20px;
 }
 .btn {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    color: #fff;
+    color: #ff3d00;
     border-width: 0;
     border-radius: 3px;
-    background-color: #FF6D00;
+    background-color: transparent;
+    border: 1px solid #ff3d00;
+    text-transform: uppercase;
 }
 .btn-xs {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     color: #fff;
     padding: 4px 8px;
@@ -61,15 +64,14 @@ hr {
     background-color: #FF6D00;
 }
 .btn-primary {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
     padding: 4px 12px;
-    color: #fff;
+    color: #ff3d00;
     border-width: 0;
     border-radius: 3px;
-    border-color: #ff3d00;
-    background: #ff3d00;
+    background: #f2f2f2;
 }
 .btn:hover {
     background: #ff3d00;
@@ -159,7 +161,7 @@ hr {
     .navbar-default .navbar-nav > li > a {
         text-align: left;
         font-weight: normal;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Work Sans', sans-serif;
         font-size: 1.000em;
         padding: 8px 8px 8px 16px;
         color: #fff;
@@ -343,21 +345,29 @@ hr {
 @media (min-width: 1400px) {
     /* --- FORM --- */
     #form {
-        height: 980px;
-        background-color: #fff;
+        height: 990px;
+        background-color: #6d6d6d;
+        -webkit-transition: 1s ease-in-out;
+        -moz-transition: 1s ease-in-out;
+        -o-transition: 1s ease-in-out;
     }
     #form .quiz {
-        margin-top: 320px;
+        margin-top: 250px;
+        background-color: #FFF;
+        padding: 30px 0;
+        border: 14px solid #FF3D00;
+        border-radius: 5px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     }
     #form .questions {
         padding: 20px;
         border-radius: 3px;
-        background-color: #fff;
-
     }
-    #form h5 {
-        margin-bottom: 20px;
-        color: #1b1b1b;
+    #form h4 {
+        font-family: 'Work Sans', sans-serif;
+        margin-bottom: 35px;
+        font-weight: lighter;
+        color: #6d6d6d;
     }
     #form .form-check {
         position: relative;
@@ -367,23 +377,106 @@ hr {
     }
     #form .form-check label {
         margin-left: 10px;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 16px;
-        /* font-weight: lighter; */
+        font-family: 'Work Sans', sans-serif;
+        font-size: 18px;
+        font-weight: lighter;
         letter-spacing: .1px;
-        color: #1b1b1b;
+        color: #6d6d6d;
     }
     #form button {
-        margin-top: 20px;
+        margin-top: 35px;
         font-weight: lighter;
         letter-spacing: .2px;
+    }
+    /* --- ANSWERS --- */
+    /* --- #1 --- */
+    #resp-1 {
+        margin-top: 300px;
+        text-align: center;
+    }
+    #resp-1 h1{
+        font-size: 72px;
+        color: #f1f1f1;
+        font-weight: bold;
+    }
+    #resp-1 p {
+        font-size: 18px;
+        font-weight: lighter;
+    	color: #6d6d6d;
+    }
+    #resp-1 b {
+    	color: #424242;
+    }
+    #resp-1 a {
+        margin-top: 50px;
+    }
+    /* --- #2 --- */
+    #resp-2 {
+        height: 1000px;
+        padding-top: 300px;
+        background-color: #424242;
+        text-align: center;
+    }
+    #resp-2 img {
+        -webkit-transition: 1s ease-in-out;
+        -moz-transition: 1s ease-in-out;
+        -o-transition: 1s ease-in-out;
+    }
+    #resp-2 img:hover {
+        transform: rotate(22.5deg);
+        /* transform: rotate(2880deg); */
+        -webkit-transition: 1s ease-in-out;
+        -moz-transition: 1s ease-in-out;
+        -o-transition: 1s ease-in-out;
+    }
+    #resp-2 a {
+        margin-top: 50px;
+    }
+    /* --- #3 --- */
+    #resp-3 {
+        height: 980px;
+        padding-top: 150px;
+        background-color: #fff;
+        text-align: center;
+    }
+    #resp-3 .photo {
+        height: 300px;
+        width: 300px;
+        margin-left: auto;
+        margin-right:auto;
+        background-image: url(../img/caminando.png);
+        background-position: center;
+        background-size: 180%;
+        border-radius: 100%;
+        margin-bottom: 70px;
+    }
+    #resp-3 .bio p {
+        font-size: 18px;
+        color:#6d6d6d;
+        font-weight: lighter;
+    }
+    #resp-3 .bio a {
+        margin-top: 50px;
+    }
+    #resp-3 .contact {
+        margin: 30px 0;
+        color:#ff3d00;
+    }
+    #resp-3 .contact a:hover {
+        color:#6d6d6d;
+    }
+    #resp-3 .contact p {
+        font-size: 14px;
+        color:#6d6d6d;
+        margin-bottom: 5px;
+
     }
     /* --- ABOUT --- */
     .shortbio {
         height: auto;
         margin-bottom: 50px;
         margin-top: 200px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Work Sans', sans-serif;
         font-size: 1.3em;
         line-height: 1.8;
         color: #424242;
@@ -400,7 +493,7 @@ hr {
         margin-bottom: 30px;
     }
     .shortbio > a {
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Work Sans', sans-serif;
         font-weight: 300;
         padding: 8px;
         margin: 0;
@@ -418,7 +511,7 @@ hr {
         margin-top: 70px;
         color: #fff;
         text-align: center;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Work Sans', sans-serif;
     }
     #contact-info a {
         font-weight: 300;
@@ -553,7 +646,7 @@ hr {
         height: auto;
         margin-bottom: 50px;
         margin-top: 130px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Work Sans', sans-serif;
         font-size: 1.0em;
         line-height: 1.8;
         color: #424242;
@@ -570,7 +663,7 @@ hr {
         margin-bottom: 20px;
     }
     .shortbio > a {
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Work Sans', sans-serif;
         font-weight: 300;
         padding: 8px;
         margin: 0;
@@ -588,7 +681,7 @@ hr {
         margin-top: 70px;
         color: #fff;
         text-align: center;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Work Sans', sans-serif;
     }
     #contact-info a {
         font-weight: 300;
@@ -680,10 +773,10 @@ hr {
     #contact-info {
         color: #fff;
         text-align: center;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Work Sans', sans-serif;
 
         a {
-            font-family: 'Open Sans', sans-serif;
+            font-family: 'Work Sans', sans-serif;
             font-weight: 300;
             padding: 8px;
             margin: 0;
@@ -717,7 +810,7 @@ hr {
     }
     .shortbio {
         margin-top: 250px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Work Sans', sans-serif;
         font-size: 1em;
         line-height: 1.8;
         color: @text_color;
@@ -813,10 +906,10 @@ hr {
     #contact-info {
         color: #fff;
         text-align: center;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Work Sans', sans-serif;
 
         a {
-            font-family: 'Open Sans', sans-serif;
+            font-family: 'Work Sans', sans-serif;
             font-size: .950em;
             font-weight: 300;
             padding: 8px;
@@ -851,7 +944,7 @@ hr {
     }
     .shortbio {
         margin-top: 200px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Work Sans', sans-serif;
         font-size: 1em;
         line-height: 1.8;
         color: @text_color;
@@ -892,7 +985,7 @@ hr {
         margin-top: 30px;
         height: auto;
         margin-bottom: 30px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Work Sans', sans-serif;
         font-size: 1em;
         line-height: 2;
         color: #424242;
@@ -920,10 +1013,10 @@ hr {
         color: #424242;
         text-align: center;
         margin: 30px 0;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Work Sans', sans-serif;
     }
     #contact-info a {
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Work Sans', sans-serif;
         font-size: 1.950em;
         font-weight: 300;
         color: #424242;
@@ -972,7 +1065,7 @@ hr {
         margin-top: 30px;
         height: auto;
         margin-bottom: 30px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Work Sans', sans-serif;
         font-size: 0.9em;
         line-height: 1.7;
         color: #424242;
@@ -1000,10 +1093,10 @@ hr {
         color: #424242;
         text-align: center;
         margin: 15px 0;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Work Sans', sans-serif;
     }
     #contact-info a {
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Work Sans', sans-serif;
         font-size: 1.950em;
         font-weight: 300;
         color: #424242;
@@ -1050,7 +1143,7 @@ hr {
         margin-top: 30px;
         height: auto;
         margin-bottom: 30px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Work Sans', sans-serif;
         font-size: 0.9em;
         line-height: 1.7;
         color: #424242;
@@ -1078,10 +1171,10 @@ hr {
         color: #424242;
         text-align: center;
         margin: 15px 0;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Work Sans', sans-serif;
     }
     #contact-info a {
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Work Sans', sans-serif;
         font-size: 1.30em;
         font-weight: 300;
         color: #424242;
