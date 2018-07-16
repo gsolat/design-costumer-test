@@ -67,11 +67,10 @@ hr {
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    padding: 4px 12px;
-    color: #ff3d00;
+    color: #fff;
     border-width: 0;
     border-radius: 3px;
-    background: #f2f2f2;
+    background: #ff3d00;
 }
 .btn:hover {
     background: #ff3d00;
@@ -80,7 +79,7 @@ hr {
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-    background: #6e6d6e;
+    background: #cc3000;
     color: #fff;
 }
 
@@ -346,7 +345,8 @@ hr {
     /* --- FORM --- */
     #form {
         height: 990px;
-        background-color: #6d6d6d;
+        background-color: #fff;
+        background-size: 800px;
         -webkit-transition: 1s ease-in-out;
         -moz-transition: 1s ease-in-out;
         -o-transition: 1s ease-in-out;
@@ -355,9 +355,9 @@ hr {
         margin-top: 250px;
         background-color: #FFF;
         padding: 30px 0;
-        border: 14px solid #FF3D00;
+        border: 14px solid #f1f1f1;
         border-radius: 5px;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
     }
     #form .questions {
         padding: 20px;
@@ -366,8 +366,8 @@ hr {
     #form h4 {
         font-family: 'Work Sans', sans-serif;
         margin-bottom: 35px;
-        font-weight: lighter;
-        color: #6d6d6d;
+        font-weight: bolder;
+        color: #424242;
     }
     #form .form-check {
         position: relative;
@@ -381,7 +381,7 @@ hr {
         font-size: 18px;
         font-weight: lighter;
         letter-spacing: .1px;
-        color: #6d6d6d;
+        color: #424242;
     }
     #form button {
         margin-top: 35px;
@@ -402,7 +402,7 @@ hr {
     #resp-1 p {
         font-size: 18px;
         font-weight: lighter;
-    	color: #6d6d6d;
+    	color: #424242;
     }
     #resp-1 b {
     	color: #424242;
@@ -424,13 +424,13 @@ hr {
     }
     #resp-2 img:hover {
         transform: rotate(22.5deg);
-        /* transform: rotate(2880deg); */
         -webkit-transition: 1s ease-in-out;
         -moz-transition: 1s ease-in-out;
         -o-transition: 1s ease-in-out;
     }
     #resp-2 a {
         margin-top: 50px;
+        color: #424242;
     }
     /* --- #3 --- */
     #resp-3 {
@@ -452,7 +452,7 @@ hr {
     }
     #resp-3 .bio p {
         font-size: 18px;
-        color:#6d6d6d;
+        color:#424242;
         font-weight: lighter;
     }
     #resp-3 .bio a {
@@ -471,72 +471,6 @@ hr {
         margin-bottom: 5px;
 
     }
-    /* --- ABOUT --- */
-    .shortbio {
-        height: auto;
-        margin-bottom: 50px;
-        margin-top: 200px;
-        font-family: 'Work Sans', sans-serif;
-        font-size: 1.3em;
-        line-height: 1.8;
-        color: #424242;
-    }
-    .shortbio .photo {
-        height: 300px;
-        background-image: url(../img/caminando.png);
-        background-position: center;
-        background-size: cover;
-        border-radius: 5px;
-        margin-bottom: 70px;
-    }
-    .shortbio > p {
-        margin-bottom: 30px;
-    }
-    .shortbio > a {
-        font-family: 'Work Sans', sans-serif;
-        font-weight: 300;
-        padding: 8px;
-        margin: 0;
-    }
-    .shortbio > i {
-        font-size: 1.5em;
-        padding:0 10px 10px 0;
-    }
-    /* --- CONTACT --- */
-    #contact {
-        height: 200px;
-        background-color: #dbd9ce;
-    }
-    #contact-info {
-        margin-top: 70px;
-        color: #fff;
-        text-align: center;
-        font-family: 'Work Sans', sans-serif;
-    }
-    #contact-info a {
-        font-weight: 300;
-        padding: 8px;
-        margin: 0;
-        color: #424242;
-    }
-    #contact-info a:hover {
-        color: #ff3d00;
-    }
-    #contact-info > p {
-        font-weight: 300;
-        margin: 0;
-    }
-    #contact-info p:last-child {
-        margin-top: 5px;
-        margin-bottom: 5px;
-        text-transform: uppercase;
-        font-size: .7em;
-        color: #424242;
-    }
-    #contact-info i {
-        font-size: 2em;
-        padding:0 10px 10px 0;
-    }
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -545,101 +479,6 @@ hr {
     .navbar-default .navbar-nav > li > a {
         color: #424242;
         padding: 5px 7px 5px 10px;
-    }
-    /* -- PORTFOLIO -- */
-    #portfolio-mobile {
-        display: none;
-    }
-    /* -- LOGOS -- */
-    #portfolio {
-        height: auto;
-        padding-top: 150px;
-        padding-bottom: 150px;
-        color: #505050;
-        background-color: #f2efe3;
-    }
-    #portfolio .carousel {
-        margin-bottom: 50px;
-        height: auto;
-    }
-    #portfolio .carousel-control {
-        color: rgba(0, 0, 0, .3);
-        text-align: center;
-        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
-    }
-    #portfolio .carousel-inner {
-        border-radius: 5px;
-        box-shadow: 0px 2px 9px rgba(0, 0, 0, .1);
-    }
-    #portfolio .carousel-indicators .active {
-        width: 30px;
-        height: 6px;
-        margin: 1px;
-        background-color: rgba(0, 0, 0, .7);
-    }
-    #portfolio .carousel-indicators {
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        z-index: 15;
-        width: 60%;
-        padding-left: 0;
-        margin-left: -30%;
-        text-align: center;
-        list-style: none;
-    }
-    #portfolio .carousel-indicators li {
-        display: inline-block;
-        width: 30px;
-        height: 6px;
-        margin: 1px;
-        text-indent: -999px;
-        cursor: pointer;
-        background-color: rgba(0, 0, 0, .2);
-        border: 0px solid #fff;
-        border-radius: 1px;
-    }
-    #portfolio .carousel-control.left, .carousel-control.right {
-        background-image: none;
-        background-color: transparent;
-    }
-    #portfolio .carousel-control .fa-chevron-left, .carousel-control .fa-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next {
-        width: 20px;
-        height: 20px;
-        margin-top: -15px;
-        font-size: 20px;
-        position: absolute;
-        top: 50%;
-        z-index: 5;
-        display: inline-block;
-    }
-    #portfolio .catalog {
-        text-align: left;
-        margin-bottom: 30px;
-        text-align: center;
-    }
-    #portfolio .preview .link {
-        height: auto;
-        border-radius: 5px;
-        width: auto;
-        height: auto;
-        margin: 0;
-        padding: 0;
-        background: #fff;
-        overflow: hidden;
-        box-shadow: 0px 2px 9px #dbd9ce;
-    }
-    #portfolio .preview > a {
-        border: 0;
-        padding: 0;
-    }
-    #portfolio .preview > img {
-        margin: 0;
-    }
-    /* --- POSTERS --- */
-    #posters {
-        height: auto;
-        background-color: #fff;
     }
     /* --- ABOUT --- */
     .shortbio {
