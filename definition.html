@@ -8,10 +8,11 @@
 
 <!-- CSS -->
 
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="shortcut icon" href="img/gs.ico">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="img/gs.ico">
 </head>
 
 
@@ -20,22 +21,52 @@
     <div class="row">
         <div class="col-xl-6 offset-xl-3">
             <div class="form-content col-xl-6 col-lg-12 col-md-12 col-12">
-                <form id="user-form" required class="offset-xl-5 offset-lg-5 offset-md-2 offset-sm-1 offset-1" >
+                <form id="test-form" required class="offset-xl-5 offset-lg-5 offset-md-2 offset-sm-1 offset-1" >
                     <div>
-                        <input name="respuesta" type= "text" placeholder="Respuesta." class="col-xl-10 col-lg-8 col-md-10 col-sm-11 col-11" required />
+                        <input name="respuestas" type="text" placeholder="Respuesta" class="col-xl-10 col-lg-8 col-md-10 col-sm-11 col-11" required />
                     </div>
-                    <div>
-                        <input name="email" type= "email" placeholder="Email" class="col-xl-10 col-lg-8 col-md-10 col-sm-11 col-11" required />
-                    </div>
-                        <input type="submit" id="submit-form" class="btn btn-primary" name="Enviar">
+                        <div>
+                            <button type="submit"id="submit-form" class="btn btn-primary">Enviar</button>
+                        </div>
                 </form>
-
-                <div class="copy-form-bottom offset-lg-5 col-lg-6 offset-md-2 col-md-9 col-sm-9 col-9 offset-sm-1 offset-1">
-                </div>
             </div>
         </div>
     </div>
 </div>
+<!-- <script>
+
+        var $form = $('form#test-form'),
+        url = 'https://script.google.com/macros/s/AKfycbxPr-LYZBvOnRB9J8mPKqO6XgvAar1NRjGRtyCi24WPFJmI5iH6/exec'
+
+        $.fn.serializeObject = function()
+        {
+         var o = {};
+         var a = this.serializeArray();
+         $.each(a, function() {
+         if (o[this.name]) {
+         if (!o[this.name].push) {
+         o[this.name] = [o[this.name]];
+         }
+         o[this.name].push(this.value || ‘’);
+         } else {
+         o[this.name] = this.value || ‘’;
+         }
+         });
+         return o;
+        };
+
+        $('#submit-form').on('click', function(e) {
+        e.preventDefault();
+        var jqxhr = $.ajax({
+        url: url,
+        method: "GET",
+        dataType: "json",
+        data: $form.serializeObject()
+        }).success(
+        // do something
+        );
+        })
+</script> -->
 <script>
 
             $(function() {
@@ -46,11 +77,11 @@
                 window.location.href = self.href;
                 }, 500);
                 });
-            });
-            function send() {
-            var $form = $('form#user-form');
-            url = 'https://script.google.com/macros/s/AKfycbxQI4jW3FMQ5Ta08znc9nF8Vd_VmbXvy5qFYJ1bmlYa-CCJ1jU/exec';
-            console.log($form.serializeObject())
+                });
+                function send() {
+                var $form = $('form#test-form');
+                url = 'https://script.google.com/macros/s/AKfycbxPr-LYZBvOnRB9J8mPKqO6XgvAar1NRjGRtyCi24WPFJmI5iH6/exec';
+                console.log($form.serializeObject())
 
             var jqxhr = $.ajax({
                 url: url,
@@ -66,7 +97,7 @@
             function clear(){
                console.log("success");
                alert("Enviado con éxito!")
-               document.getElementById("user-form").reset();
+               document.getElementById("test-form").reset();
             }
 </script>
 </body>
