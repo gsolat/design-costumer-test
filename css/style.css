@@ -354,14 +354,22 @@ hr {
     #form .quiz {
         margin-top: 250px;
         background-color: #FFF;
-        padding: 30px 0;
+        padding: 50px 0 30px 20px;
         border: 1px solid #f1f1f1;
         border-radius: 5px;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     }
     #form .questions {
-        padding: 20px;
         border-radius: 3px;
+    }
+    #form .custom-radio .custom-control-input:checked~.custom-control-label::before {
+        background-color: #ff3d00;
+    }
+    #form .custom-control-input:focus {
+        color: red;
+    }
+    #form .custom-control-label::after {
+        background-size: 0;
     }
     #form h3 {
         font-family: 'Work Sans', sans-serif;
@@ -384,7 +392,7 @@ hr {
     }
     #form .footer-btn button {
         float: right;
-        margin: 5px 0 20px 0;
+        margin: 25px 0 20px 0;
         font-weight: lighter;
         letter-spacing: .2px;
     }
@@ -452,23 +460,27 @@ hr {
         margin-right:auto;
         background-image: url(../img/caminando.png);
         background-position: center;
-        background-size: 180%;
+        background-size: 100%;
         border-radius: 100%;
         margin-bottom: 70px;
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
     }
     #resp-3 .bio p {
         font-size: 18px;
         color:#424242;
         font-weight: lighter;
     }
-    #resp-3 .bio a {
+    #resp-3 a {
         margin-top: 50px;
+        text-decoration: underline;
     }
     #resp-3 .contact {
-        margin: 30px 0;
+        margin: 25px 0;
         color:#ff3d00;
     }
-    #resp-3 .contact a:hover {
+    #resp-3 a:hover {
         color:#6d6d6d;
     }
     #resp-3 .contact p {
@@ -476,6 +488,15 @@ hr {
         color:#6d6d6d;
         margin-bottom: 5px;
     }
+    #resp-3 .return .btn {
+        margin-top: 20px;
+        text-decoration: none;
+    }
+    #resp-3 .btn:hover {
+        color: #fff;
+    }
+
+    /* --- #4 --- */
     #resp-4 {
         margin-top: 300px;
         text-align: center;
