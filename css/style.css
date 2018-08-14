@@ -518,6 +518,7 @@ hr {
         margin-top: 50px;
     }
     #resp-4 a:hover {
+        color: #fff;
         background-color: #cc3000;
     }
     #resp-4 .blockquote-footer {
