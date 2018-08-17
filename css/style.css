@@ -1437,7 +1437,7 @@ hr {
 
     /* --- FORM --- */
     #form {
-        height: 100%;
+        width: 100%;
         background-color: #fff;
         background-size: 800px;
         border-radius: 3px;
@@ -1449,6 +1449,9 @@ hr {
         padding: 20px 0px 10px 5px;
         border-radius: 5px;
     }
+    /* #form .quiz .questions {
+
+    } */
     #form .custom-radio .custom-control-input:checked~.custom-control-label::before {
         background-color: #ff3d00;
     }
