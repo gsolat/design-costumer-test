@@ -108,12 +108,8 @@ hr {
         font-family: 'Work Sans', sans-serif;
     }
     #form .quiz {
-        margin-top: calc(50%/2 - 9.5%);
+        margin-top: calc(50%/2 - 14.5%);
         background-color: #FFF;
-        padding: 50px 0 30px 20px;
-        border: 1px solid #f1f1f1;
-        border-radius: 5px;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     }
     #form .custom-radio .custom-control-input:checked~.custom-control-label::before {
         background-color: #ff3d00;
@@ -124,9 +120,12 @@ hr {
     #form .custom-control-label::after {
         background-size: 0;
     }
-    #form h3 {
+    #form h1 {
         margin-bottom: 35px;
-        font-weight:  normal;
+        font-size: 7.0em;
+        font-weight: 900;
+        line-height: .8;
+        text-transform: uppercase;
         color: #424242;
     }
     #form .custom-control {
@@ -142,92 +141,77 @@ hr {
         color: #424242;
     }
     #form .footer-btn button {
-        float: right;
         margin: 25px 0 20px 0;
         font-weight: lighter;
     }
     /* --- ANSWERS --- */
     /* --- #1 --- */
     #resp-1 {
-        margin-top: calc(50%/2 - 8.5%);
+        margin-top: calc(50%/2 - 14.5%);
         text-align: center;
         font-size: 18px;
+        line-height: 28px;
         font-weight: lighter;
         color: #424242;
     }
-    #resp-1 h1{
-        font-size: 72px;
-        color: #f1f1f1;
-        font-weight: bold;
+    #resp-1 img {
+        width: 250px;
     }
     #resp-1 b {
     	color: #424242;
+        font-weight: 600;
     }
     #resp-1 a {
         font-weight: lighter;
-        margin-top: 40px;
+        margin-top: 70px;
     }
     /* --- #2 --- */
     #resp-2 {
-        margin-top: calc(50%/2 - 8.5%);
+        margin-top: calc(50%/2 - 14.5%);
         background-color: #FFF;
         text-align: center;
         font-size: 18px;
+        line-height: 28px;
         font-weight: lighter;
         color: #424242;
     }
-    #resp-2 img {
-        width: 150px;
-        margin-bottom: 50px;
-        -webkit-transition: .5s ease-in-out;
-        -moz-transition: .5s ease-in-out;
-        -o-transition: .5s ease-in-out;
+    #resp-2 b {
+    	color: #424242;
+        font-weight: 600;
     }
-    #resp-2 img:hover {
-        transform: rotate(22.5deg);
-        -webkit-transition: .5s ease-in-out;
-        -moz-transition: .5s ease-in-out;
-        -o-transition: .5s ease-in-out;
+    #resp-2 img {
+        width: 250px;
     }
     #resp-2 a {
         font-weight: lighter;
-        margin-top: 40px;
+        margin-top: 70px;
     }
     /* --- #3 --- */
     #resp-3 {
         margin-top: calc(50%/2 - 14.5%);
         background-color: #fff;
-        text-align: center;
         font-weight: lighter;
-        font-size: 14px;
         color:#6d6d6d;
         margin-bottom: 5px;
     }
-    #resp-3 .photo {
-        height: 300px;
-        width: 300px;
-        margin-left: auto;
-        margin-right:auto;
-        background-image: url(../img/caminando.png);
-        background-position: center;
-        background-size: 100%;
-        border-radius: 100%;
-        margin-bottom: 70px;
-        -webkit-transition: .5s ease-in-out;
-        -moz-transition: .5s ease-in-out;
-        -o-transition: .5s ease-in-out;
+    #resp-3 .photo img {
+        max-width: 330px;
+        float: right;
+        margin-right: 10px;
     }
     #resp-3 .bio p {
         font-size: 18px;
+        line-height: 28px;
         color:#424242;
     }
     #resp-3 a {
-        margin-top: 50px;
         text-decoration: underline;
     }
-    #resp-3 .contact a {
-        margin: 25px 0;
-        color:#ff3d00;
+    #resp-3 .contact {
+        margin: 20px 0;
+    }
+    #resp-3 .social {
+        margin-top: 20px;
     }
     #resp-3 a:hover {
         color:#6d6d6d;
