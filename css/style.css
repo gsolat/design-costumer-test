@@ -1009,6 +1009,9 @@ hr {
         font-weight: lighter;
         color: #424242;
     }
+    #resp-1 img {
+        max-width: 250px;
+    }
     #resp-1 b {
     	color: #424242;
         font-weight: 600;
@@ -1037,7 +1040,7 @@ hr {
         font-weight: 600;
     }
     #resp-2 img {
-        width: 250px;
+        max-width: 250px;
     }
     #resp-2 a {
         font-weight: lighter;
