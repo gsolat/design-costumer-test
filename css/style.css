@@ -1004,7 +1004,7 @@ hr {
     #resp-1 {
         margin-top: calc(50%/2 - 14.5%);
         text-align: center;
-        font-size: 0.95em;
+        font-size: 1.05em;
         line-height: 22px;
         font-weight: lighter;
         color: #424242;
@@ -1027,7 +1027,7 @@ hr {
         margin-top: calc(50%/2 - 14.5%);
         background-color: #FFF;
         text-align: center;
-        font-size: 0.95em;
+        font-size: 1.05em;
         line-height: 22px;
         font-weight: lighter;
         color: #424242;
@@ -1055,7 +1055,7 @@ hr {
         font-weight: lighter;
         color:#6d6d6d;
         margin-bottom: 5px;
-        font-size: 0.95em;
+        font-size: 1.05em;
         text-align: center;
     }
     #resp-3 .photo img {
@@ -1114,7 +1114,7 @@ hr {
         background-color: #cc3000;
     }
     #resp-4 .blockquote {
-        font-size: 0.95em;
+        font-size: 1.05em;
         line-height: 22px;
     }
     #resp-4 .blockquote-footer {
@@ -1169,7 +1169,7 @@ hr {
     }
     #form .custom-control label {
         padding-left: 15px;
-        font-size: 0.85em;
+        font-size: 0.95em;
         font-weight: lighter;
         letter-spacing: .1px;
         color: #424242;
@@ -1205,7 +1205,7 @@ hr {
         margin-top: calc(50%/2 - 14.5%);
         background-color: #FFF;
         text-align: center;
-        font-size: 0.85em;
+        font-size: 0.95em;
         line-height: 22px;
         font-weight: lighter;
         color: #424242;
@@ -1239,7 +1239,7 @@ hr {
     }
     #resp-3 .bio p {
         font-size: 0.95em;
-        line-height: 22px;
+        line-height: 18px;
         color:#424242;
     }
     #resp-3 a {
