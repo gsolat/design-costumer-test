@@ -988,7 +988,7 @@ hr {
     }
     #form .custom-control label {
         padding-left: 15px;
-        font-size: 0.85em;
+        font-size: 0.95em;
         font-weight: lighter;
         letter-spacing: .1px;
         color: #424242;
@@ -1009,9 +1009,6 @@ hr {
         font-weight: lighter;
         color: #424242;
     }
-    #resp-1 img {
-        width: 250px;
-    }
     #resp-1 b {
     	color: #424242;
         font-weight: 600;
@@ -1027,7 +1024,7 @@ hr {
         margin-top: calc(50%/2 - 14.5%);
         background-color: #FFF;
         text-align: center;
-        font-size: 0.85em;
+        font-size: 0.95em;
         line-height: 22px;
         font-weight: lighter;
         color: #424242;
@@ -1055,7 +1052,7 @@ hr {
         font-weight: lighter;
         color:#6d6d6d;
         margin-bottom: 5px;
-        font-size: 0.85em;
+        font-size: 0.95em;
         text-align: center;
     }
     #resp-3 .photo img {
@@ -1078,6 +1075,9 @@ hr {
     }
     #resp-3 a:hover {
         color:#6d6d6d;
+    }
+    #resp-3 .return {
+        margin-bottom: 50px;
     }
     #resp-3 .return .btn {
         font-size: 12px;
@@ -1187,9 +1187,6 @@ hr {
         font-weight: lighter;
         color: #424242;
     }
-    #resp-1 img {
-        width: 250px;
-    }
     #resp-1 b {
     	color: #424242;
         font-weight: 600;
@@ -1216,9 +1213,6 @@ hr {
     #resp-2 b {
     	color: #424242;
         font-weight: 600;
-    }
-    #resp-2 img {
-        width: 250px;
     }
     #resp-2 a {
         font-weight: lighter;
