@@ -988,7 +988,7 @@ hr {
     }
     #form .custom-control label {
         padding-left: 15px;
-        font-size: 1.05em;
+        font-size: 1.125em;
         font-weight: lighter;
         letter-spacing: .1px;
         color: #424242;
@@ -1004,7 +1004,7 @@ hr {
     #resp-1 {
         margin-top: calc(50%/2 - 14.5%);
         text-align: center;
-        font-size: 1.05em;
+        font-size: 1.125em;
         line-height: 22px;
         font-weight: lighter;
         color: #424242;
@@ -1027,7 +1027,7 @@ hr {
         margin-top: calc(50%/2 - 14.5%);
         background-color: #FFF;
         text-align: center;
-        font-size: 1.05em;
+        font-size: 1.125em;
         line-height: 22px;
         font-weight: lighter;
         color: #424242;
@@ -1055,7 +1055,7 @@ hr {
         font-weight: lighter;
         color:#6d6d6d;
         margin-bottom: 5px;
-        font-size: 1.05em;
+        font-size: 1.125em;
         text-align: center;
     }
     #resp-3 .photo img {
@@ -1063,7 +1063,6 @@ hr {
         margin: 10px 0 20px 0;
     }
     #resp-3 .bio p {
-        font-size: 0.95em;
         line-height: 22px;
         color:#424242;
     }
@@ -1114,7 +1113,7 @@ hr {
         background-color: #cc3000;
     }
     #resp-4 .blockquote {
-        font-size: 1.05em;
+        font-size: 1.125em;
         line-height: 22px;
     }
     #resp-4 .blockquote-footer {
