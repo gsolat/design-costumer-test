@@ -989,7 +989,7 @@ hr {
     #form .custom-control label {
         padding-left: 15px;
         font-size: 1.125em;
-        font-weight: lighter;
+        font-weight: normal;
         letter-spacing: .1px;
         color: #424242;
     }
@@ -1005,7 +1005,7 @@ hr {
         text-align: center;
         font-size: 1.125em;
         line-height: 22px;
-        font-weight: lighter;
+        font-weight: normal;
         color: #424242;
     }
     #resp-1 img {
@@ -1027,7 +1027,7 @@ hr {
         text-align: center;
         font-size: 1.125em;
         line-height: 22px;
-        font-weight: lighter;
+        font-weight: normal;
         color: #424242;
     }
     #resp-2 br {
@@ -1049,7 +1049,7 @@ hr {
     #resp-3 {
         margin-top: calc(50%/2 - 14.5%);
         background-color: #fff;
-        font-weight: lighter;
+        font-weight: normal;
         color:#6d6d6d;
         margin-bottom: 5px;
         font-size: 1.15em;
@@ -1091,8 +1091,10 @@ hr {
     #resp-4 {
         margin-top: calc(50%/2 - 8.5%);
         text-align: center;
-        font-weight: lighter;
+        font-weight: normal;
         color: #424242;
+        font-size: 1.125em;
+        line-height: 22px;
     }
     #resp-4 h1{
         font-size: 72px;
@@ -1110,7 +1112,7 @@ hr {
         background-color: #cc3000;
     }
     #resp-4 .blockquote {
-        font-size: 1.125em;
+        font-size: 1.0125em;
         line-height: 22px;
     }
     #resp-4 .blockquote-footer {
