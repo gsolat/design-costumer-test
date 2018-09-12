@@ -1163,12 +1163,13 @@ hr {
     #form .custom-control {
         position: relative;
         display: block;
-        margin-bottom: 20px;
+        margin-bottom: 17px;
     }
     #form .custom-control label {
-        padding-left: 15px;
+        padding-left: 8px;
         font-size: 1.125em;
         font-weight: normal;
+        line-height: 22px;
         letter-spacing: .1px;
         color: #424242;
     }
