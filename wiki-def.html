@@ -17,15 +17,49 @@
 <body>
 <div class="container-fluid" id="resp-4">
     <div class="row">
-        <div class="resp-1 col-xl-4 offset-xl-4 col-lg-4 offset-lg-4 col-md-4 offset-md-4 col-sm-6 offset-sm-3 col-10 offset-1">
+        <div class="resp-4 col-xl-4 offset-xl-4 col-lg-4 offset-lg-4 col-md-4 offset-md-4 col-sm-6 offset-sm-3 col-10 offset-1">
             <h1>ABC</h1>
-            <blockquote class="blockquote">
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLScGR03NvM8TAacFrqf-tPlwX8WdqnvqFuXjxUkyCDpftMNnjA/formResponse" target="_self" id="bootstrapForm" method="POST">
+                <fieldset>
+                    <p for="1159090261">¿Cuál es su mejor definición de Diseño?</p>
+                    <div class="form-group">
+                        <input id="776765559" type="text" name="entry.776765559" class="form-control" required></input>
+                    </div>
+                </fieldset>
+
+                <input type="hidden" name="fvv" value="1">
+                <input type="hidden" name="fbzx" value="658329116554850919">
+                <input type="hidden" name="pageHistory" value="0">
+                <a class="btn btn-primary" href="index.html">Inicio</a>
+                <input class="btn btn-primary" type="submit" value="enviar">
+
+            </form>
+
+            <!-- <blockquote class="blockquote">
                 <p class="col-xl-10 offset-xl-1">El <b>diseño</b> se define como el proceso previo de configuración mental en la búsqueda de una solución en cualquier campo.</p>
                 <footer class="blockquote-footer">Tomado de <a href="https://es.wikipedia.org/wiki/Dise%C3%B1o" target="_blank">wikipedia</a></footer>
-                <a class="btn btn-primary" href="index.html">Inicio</a>
-            </blockquote>
+            </blockquote> -->
+
         </div>
     </div>
 </div>
 </body>
+<script>
+    $('#bootstrapForm').submit(function (event) {
+        event.preventDefault()
+        var extraData = {}
+        $('#bootstrapForm').ajaxSubmit({
+            data: extraData,
+            dataType: 'jsonp',  // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
+            error: function () {
+                // Submit of form should be successful but JSONP callback will fail because Google Forms
+                // does not support it, so this is handled as a failure.
+                alert('Form Submitted. Thanks.')
+                // You can also redirect the user to a custom thank-you page:
+                // window.location = 'http://www.mydomain.com/thankyoupage.html'
+            }
+        })
+    })
+</script>
+
 <html>

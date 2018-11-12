@@ -236,11 +236,14 @@ hr {
         color: #f1f1f1;
         font-weight: bold;
     }
+    #resp-4 fieldset legend {
+        font-size: 1em;
+    }
     #resp-4 b {
     	color: #424242;
     }
     #resp-4 a {
-        margin-top: 40px;
+        margin-top: 0px;
     }
     #resp-4 a:hover {
         color: #fff;
