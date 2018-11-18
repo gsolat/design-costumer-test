@@ -1108,8 +1108,11 @@ hr {
     #resp-4 b {
     	color: #424242;
     }
-    #resp-4 a {
-        margin-top: 40px;
+    #resp-4 a, .btn {
+        font-size: 12px;
+        padding: 3px 8px;
+        margin-top: 0px;
+        border: 1px solid #ff3d00;
     }
     #resp-4 a:hover {
         color: #fff;
@@ -1121,11 +1124,6 @@ hr {
     }
     #resp-4 .blockquote-footer {
         color: #424242;
-    }
-    #resp-4 .blockquote .btn {
-        font-size: 12px;
-        padding: 4px 8px;
-        margin-top: 30px;
     }
 }
 
@@ -1281,8 +1279,11 @@ hr {
     	color: #424242;
         font-weight: 600;
     }
-    #resp-4 a {
-        margin-top: 40px;
+    #resp-4 a, .btn {
+        font-size: 12px;
+        padding: 3px 8px;
+        margin-top: 0px;
+        border: 1px solid #ff3d00;
     }
     #resp-4 a:hover {
         color: #fff;
@@ -1294,10 +1295,5 @@ hr {
     }
     #resp-4 .blockquote-footer {
         color: #424242;
-    }
-    #resp-4 .blockquote .btn {
-        font-size: 12px;
-        padding: 4px 8px;
-        margin-top: 30px;
     }
 }
