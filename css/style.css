@@ -1053,7 +1053,7 @@ hr {
         font-family: 'Ubuntu', sans-serif;
     }
     #form .quiz {
-        margin-top: calc(50%/2 - 14.5%);
+        margin-top: calc(50%/2 - 4.5%);
         background-color: #FFF;
     }
     #form .custom-radio .custom-control-input:checked~.custom-control-label::before {
