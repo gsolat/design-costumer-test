@@ -1366,6 +1366,9 @@ hr {
         margin-right: 10px;
         color: #f37466;
     }
+    #resp-3 .contact {
+        text-align: left;
+    }
     #resp-3 .social {
         margin-top: 20px;
     }
