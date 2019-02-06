@@ -1177,7 +1177,7 @@ hr {
         color: #f37466;
     }
     #resp-3 .contact {
-        margin: 20px 0;
+        text-align: left;
     }
     #resp-3 .social {
         margin-top: 20px;
@@ -1244,7 +1244,7 @@ hr {
         font-family: 'Ubuntu', sans-serif;
     }
     #form .quiz {
-        margin-top: calc(50%/2 - 14.5%);
+        margin-top: calc(50%/2 - 4.5%);
         background-color: #FFF;
     }
     #form .custom-radio .custom-control-input:checked~.custom-control-label::before {
@@ -1365,9 +1365,6 @@ hr {
     #resp-3 i {
         margin-right: 10px;
         color: #f37466;
-    }
-    #resp-3 .contact {
-        margin: 20px 0;
     }
     #resp-3 .social {
         margin-top: 20px;
