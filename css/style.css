@@ -1423,3 +1423,13 @@ hr {
 }
 
 /* -- LOGO -- */
+
+#logo #icons {
+    margin-bottom: 200px;
+}
+#logo h2 {
+    margin-top: 50px;
+    text-align: center;
+    color: #f37466;
+    font-weight: bold;
+}
